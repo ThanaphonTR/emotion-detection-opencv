@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "set NEXT_DISABLE_TURBOPACK=1 && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "next": "16.1.1",
+    "onnxruntime-node": "^1.23.2",
     "onnxruntime-web": "^1.23.2",
     "react": "19.2.3",
     "react-dom": "19.2.3"
